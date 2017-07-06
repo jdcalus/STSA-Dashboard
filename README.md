@@ -874,7 +874,7 @@ Click **Done** and then click **Deploy**
 
 Your IoT information should be updating the Dashboard
 
-![install dashboard nodes](images/iot-dashboard-data.png)
+![install dashboard nodes](images/Iot-dashboard-data.png)
 
 ## Hybrid Cloud Lab Dashboard
 
