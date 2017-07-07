@@ -876,9 +876,58 @@ Your IoT information should be updating the Dashboard
 
 ![install dashboard nodes](images/Iot-dashboard-data.png)
 
+## Watson Conversation Service
+Watson Conversation only has 1 link to the dashboard. This to show how many times there is a request to a Watson Conversation service. To do this, we will create a link node right after the call to WCS.
+Drag the **LinkL** node from the palette to just above **STSA-CONV** node.
+
+![link wcs node](images/connect-wcs-link-nodes.png)
+
+Now double click on the link node to create a link to the dashboard. Update you details for your flow.
+
+![install dashboard nodes](images/wcs-link-details.png)
+
+Next we want to change the color of the local dashboard when the sense hat color is changed. Drag another "output link" node to the flow. This time put it by the **ChangeIoTColor** function node.
+
+![wcs color link](images/wcs-color-link.png)
+
+Double click on the new link node and update the appropriate checkbox details.
+
+![wcs color link](images/wcs-color-link-detail.png)
+
+
+Click **Done** and then click **Deploy**. Your updates should be sent to the local and global dashboards.
+
+You are done for this dashboard updates. Nice Job!
+
+
 ## Hybrid Cloud Lab Dashboard
+In the hybrid cloud we want to show how many times we are making API calls to other cloud providers. 
+So similarly to the prior two labs we want to create a link from our flow code to the dashboard.
+
+1. Connect the two weather API calls to the same **Link** node like in the diagram below
+
+![weather api  link](images/connect-weather-link-node.png)
+
+And then select the "Weather Dashboard" checkbox
+
+![weather link detail](images/weather-link-details.png)
+
+2. Connect each of the two CICS calls to a new link.
+
+![cics api  link](images/connect-cics-link-node.png)
+
+And the CICS link details are as follows:
+
+![cics link details](images/cics-link-details.png)
+
+
+Click **Done** and then click **Deploy**. Your updates should be sent to the local and global dashboards.
+
+We are set. Way to go!
+
 
 ## Blockchain Lab Dashboard
+Refer to the Blockchain STSA Lab for these instructions. They are part of the lab.
 
 
 
