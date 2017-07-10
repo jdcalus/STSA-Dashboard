@@ -3,7 +3,7 @@
 The STSA Dashboard project is designed and built to help show what is occuring in the STSA Labs.
 There are two different dashboards. There is a local dashboard that shows all of the details for
 each STSA team and there is a global dashboard that aggregates all of the events for each of the
-respective teams. 
+respective teams.
 
 As you do each of the first Four Labs, you can add the hooks to the flows to add information
 to the dashboards. Before we can add the hooks for each lab, we need to create the Dashboard flow
@@ -25,7 +25,7 @@ install the package by clicking on the Manage palette menu option.
 
 ![manage palette](images/node-red-manage-palette.png)
 
-Once you click on the button, click the **Install** tab and then search for **Dashboard**. Locate 
+Once you click on the button, click the **Install** tab and then search for **Dashboard**. Locate
 **node-red-dashboard** and click the install button.
 
 ![install dashboard palette](images/node-red-manage-palette-dashboard.png)
@@ -529,7 +529,7 @@ Copy the code below and paste it into your new dashboard flow.
         "title": "Temperature",
         "label": "Celsius",
         "format": "{{value}}",
-        "min": "30",
+        "min": "25",
         "max": "45",
         "colors": [
             "#00b500",
@@ -843,18 +843,18 @@ Once you have pasted into your new flow the screen should look similar to the fo
 
 ![install dashboard nodes](images/node-red-dashboard-nodes.png)
 
-That is it. You have added the Dashboard to your application. 
-The dashboard can be viewed by opening a browser window to the same URL of your NodeRed 
-application but removing everything to the right of "/red..." and replace with "/ui". 
-Similar to the following 
+That is it. You have added the Dashboard to your application.
+The dashboard can be viewed by opening a browser window to the same URL of your NodeRed
+application but removing everything to the right of "/red..." and replace with "/ui".
+Similar to the following
 
 `https://jdcalus-stsa.mybluemix.net/red/#`
 
-to 
+to
 
 `https://jdcalus-stsa.mybluemix.net/ui/`
 
-Remember we have created the Dashboard, but nothing is sending it data.  Now after each lab completed, 
+Remember we have created the Dashboard, but nothing is sending it data.  Now after each lab completed,
 follow the steps below to add the Dashboard functionality to each of the respective Labs.
 
 ## IoT Lab Dashboard
@@ -877,8 +877,9 @@ Your IoT information should be updating the Dashboard
 ![install dashboard nodes](images/Iot-dashboard-data.png)
 
 ## Watson Conversation Service
-Watson Conversation only has 1 link to the dashboard. This to show how many times there is a request to a Watson Conversation service. To do this, we will create a link node right after the call to WCS.
-Drag the **LinkL** node from the palette to just above **STSA-CONV** node.
+Watson Conversation only has 2 links to the dashboard. This is to show how many times there is a request to a Watson Conversation service. To do this, we will create a link node right after the call to WCS.
+
+Drag the **Link** node from the palette to just above **STSA-CONV** node.
 
 ![link wcs node](images/connect-wcs-link-nodes.png)
 
@@ -891,9 +892,7 @@ Next we want to change the color of the local dashboard when the sense hat color
 ![wcs color link](images/wcs-color-link.png)
 
 Double click on the new link node and update the appropriate checkbox details.
-
 ![wcs color link](images/wcs-color-link-detail.png)
-
 
 Click **Done** and then click **Deploy**. Your updates should be sent to the local and global dashboards.
 
@@ -901,34 +900,24 @@ You are done for this dashboard updates. Nice Job!
 
 
 ## Hybrid Cloud Lab Dashboard
-In the hybrid cloud we want to show how many times we are making API calls to other cloud providers. 
+In the hybrid cloud we want to show how many times we are making API calls to other cloud providers.
 So similarly to the prior two labs we want to create a link from our flow code to the dashboard.
 
 1. Connect the two weather API calls to the same **Link** node like in the diagram below
-
 ![weather api  link](images/connect-weather-link-node.png)
-
 And then select the "Weather Dashboard" checkbox
-
 ![weather link detail](images/weather-link-details.png)
 
-2. Connect each of the two CICS calls to a new link.
-
-![cics api  link](images/connect-cics-link-node.png)
-
+2. Connect each of the two http requests (CICS calls) to a new link.
+![cics api  link](images/connect-cics-link-nodes.png)
 And the CICS link details are as follows:
-
 ![cics link details](images/cics-link-details.png)
 
 
 Click **Done** and then click **Deploy**. Your updates should be sent to the local and global dashboards.
 
-We are set. Way to go!
+We are all set. Way to go!
 
 
 ## Blockchain Lab Dashboard
 Refer to the Blockchain STSA Lab for these instructions. They are part of the lab.
-
-
-
-
