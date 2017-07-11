@@ -1,8 +1,9 @@
-# Dashboard Project
+
 ![logo](images/STSALogo.png)
 
+# Dashboard Project
 
-#Table of Contents
+# Table of Contents
 1. [Overview](#stas-dashboard-project)
 2. [NodeRed](#nodered)
   - [Dashboard Tab](create-dashboard-flow-tab)
