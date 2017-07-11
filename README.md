@@ -877,11 +877,11 @@ Remember we have created the Dashboard, but nothing is sending it data.  Now aft
 follow the steps below to add the Dashboard functionality to each of the respective Labs.
 
 ## IoT Lab Dashboard
-Click on the flow tab that has your IoT flows. Next add a "Link" node to the flow.
+Click on the flow tab that has your **BlueMix** IoT flows. Next add a "Link" node to the flow.
 
 ![install dashboard nodes](images/node-red-output-link.png)
 
-Drag the link node to the pallet and place it near the **environment** IoT node. Then connect the "environment" node to the "Link" node
+Drag the link node to the pallet and place it near the **Environment** IoT node. Then connect the "Environment" node to the "Link" node
 
 ![install dashboard nodes](images/connect-environment-link-node.png)
 
@@ -896,7 +896,7 @@ Your IoT information should be updating the Dashboard
 ![install dashboard nodes](images/Iot-dashboard-data.png)
 
 ## Watson Conversation Service
-Watson Conversation only has 2 links to the dashboard. This is to show how many times there is a request to a Watson Conversation service. To do this, we will create a link node right after the call to WCS.
+Watson Conversation has 2 links to the dashboard. This is to show how many times there is a request to a Watson Conversation service. To do this, we will create a link node right after the call to WCS.
 
 Drag the **Link** node from the palette to just above **STSA-CONV** node.
 
