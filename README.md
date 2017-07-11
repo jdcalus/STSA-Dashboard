@@ -1,6 +1,21 @@
-# STSA Dashboard Project
+# Dashboard Project
+![logo](images/STSALogo.png)
 
-The STSA Dashboard project is designed and built to help show what is occuring in the STSA Labs.
+
+#Table of Contents
+1. [Overview](#stas-dashboard-project)
+2. [NodeRed](#nodered)
+  - [Dashboard Tab](create-dashboard-flow-tab)
+  - [Update NodeRed Pallet](#update-the-node-pallet)
+  - [Install New Flow](install-dashboard-nodes)
+3. [IoT Lab Updates](#ioi-lab-dashboard)
+4. [Watson Conversation Updates](#watson-conversation-service)
+5. [Hybrid Cloud Updates](#hybrid-cloud-lab-dashboard)
+6. [Blockchain Updates](#blockchain-lab-dashboard)
+
+## STSA Dashboard Project
+
+The STSA Dashboard project is designed and built to help show what is occurring in the STSA Labs.
 There are two different dashboards. There is a local dashboard that shows all of the details for
 each STSA team and there is a global dashboard that aggregates all of the events for each of the
 respective teams.
@@ -9,13 +24,16 @@ As you do each of the first Four Labs, you can add the hooks to the flows to add
 to the dashboards. Before we can add the hooks for each lab, we need to create the Dashboard flow
 within your NodeRed environment.
 
+## NodeRed
+Remember you have created several flow with NodeRed running on BlueMix. All of the updates below are for NodeRed running on Bluemix.
+
 ## Create Dashboard Flow Tab
 Create a new Flow Tab in your main STSA NodeRed instance and call it "Dashboard". This is done by
 clicking the "Plus" sign in the upper right side of the screen.
 
 ![Add Flow Button](images/node-red-add-flow.png)
 
-Double click on the Title of the flow and chang the name to "Dashboard"
+Double click on the Title of the flow and change the name to "Dashboard"
 
 ![Add Flow Button](images/node-red-flow-editor.png)
 
